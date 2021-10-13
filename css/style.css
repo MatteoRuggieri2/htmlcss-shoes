@@ -6,8 +6,12 @@
 }
 
 /*COMMON*/
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    font-family: "Rubik Mono One";
+    font-family: "Rubik Mono One", sans-serif;
 }
 
 img{
@@ -21,14 +25,18 @@ nav{
     position: fixed;
     top: 20px;
     right: 10px;
-    z-index: 10;
+    z-index: 1;
 }
 
-header ul{
+nav ul{
     list-style-type: none;
 }
 
-header li{
+nav li{
+    display: inline-block;
+}
+
+nav li a{
     display: inline-block;
     width: 40px;
     line-height: 40px;
@@ -37,16 +45,12 @@ header li{
     font-size: 15px;
     text-align: center;
     background-color: white;
-}
-
-header li:hover{
-    background-color: #e2e0e0;
-}
-
-nav a{
-    display:inline-block;
     text-decoration: none;
     color: black;
+}
+
+nav a:hover{
+    background-color: #e2e0e0;
 }
 
 /*MAIN*/
@@ -57,17 +61,17 @@ main section{
 }
 
 /*Section 1*/
-main section:first-child{
+#section-1{
     background-color: red;
 }
 
 /*Section 2*/
-main section:nth-child(2){
+#section-2{
     background-color: green;
 }
 
 /*Section 3*/
-main section:last-child{
+#section-3{
     background-color: yellow;
 }
 
